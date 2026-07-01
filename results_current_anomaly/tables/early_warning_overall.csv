@@ -1,0 +1,2 @@
+sessions_with_anomaly,sessions_alerted,alerted_before_or_at_start_rate,median_lead_time_s,mean_lead_time_s
+23,23,0.7391304347826086,0.0,-92.17391304347827

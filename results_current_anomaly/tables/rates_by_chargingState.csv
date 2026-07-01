@@ -1,0 +1,4 @@
+chargingState,label_current_anomaly_sum,label_current_anomaly_mean,label_future_anomaly_5min_sum,label_future_anomaly_5min_mean,label_future_anomaly_10min_sum,label_future_anomaly_10min_mean,label_future_anomaly_15min_sum,label_future_anomaly_15min_mean,rows
+Charging,7612,0.08476614699331848,4582,0.051024498886414256,7899,0.08796213808463252,9858,0.1097772828507795,89800
+Faulted,117,1.0,0,0.0,0,0.0,0,0.0,117
+SuspendedEV,1404,0.13924427253793514,335,0.03322423881781216,392,0.03887731825845483,392,0.03887731825845483,10083

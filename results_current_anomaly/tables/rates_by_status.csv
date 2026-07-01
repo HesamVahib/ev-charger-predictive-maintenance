@@ -1,0 +1,4 @@
+status,label_current_anomaly_sum,label_current_anomaly_mean,label_future_anomaly_5min_sum,label_future_anomaly_5min_mean,label_future_anomaly_10min_sum,label_future_anomaly_10min_mean,label_future_anomaly_15min_sum,label_future_anomaly_15min_mean,rows
+Charging,7548,0.08411339930462691,4582,0.051060889720959256,7899,0.08802487296068467,9858,0.10985557635731479,89736
+Finishing,1404,0.13924427253793514,335,0.03322423881781216,392,0.03887731825845483,392,0.03887731825845483,10083
+Unavailable,181,1.0,0,0.0,0,0.0,0,0.0,181

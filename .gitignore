@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*_backup.py
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Private local datasets
+private_data/
+dataset/
+datasets/
+*100k*.csv
+*full*.csv
+*private*.csv
+*raw*.csv
+*company*.csv
+*kempower*.csv
+*synthetic_kempower*.csv

@@ -1,0 +1,110 @@
+column,role,description,dtype
+sample_id,metadata,Identifier/timestamp for grouping and splitting.,object
+txId,metadata,Identifier/timestamp for grouping and splitting.,object
+sessionId,metadata,Identifier/timestamp for grouping and splitting.,object
+stationId,metadata,Identifier/timestamp for grouping and splitting.,object
+chargerId,metadata,Identifier/timestamp for grouping and splitting.,object
+locationUid,metadata,Identifier/timestamp for grouping and splitting.,object
+evseId,metadata,Identifier/timestamp for grouping and splitting.,int64
+connectorId,metadata,Identifier/timestamp for grouping and splitting.,int64
+sequenceNumber,metadata,Identifier/timestamp for grouping and splitting.,int64
+sampleTime,metadata,Identifier/timestamp for grouping and splitting.,object
+timestamp,metadata,Identifier/timestamp for grouping and splitting.,object
+relativeTsSeconds,metadata,Identifier/timestamp for grouping and splitting.,int64
+startTime,metadata,Identifier/timestamp for grouping and splitting.,object
+status,state_or_label_only,Operational state; use carefully to avoid leakage.,object
+chargingState,state_or_label_only,Operational state; use carefully to avoid leakage.,object
+isCharging,state_or_label_only,Operational state; use carefully to avoid leakage.,bool
+isPreparing,state_or_label_only,Operational state; use carefully to avoid leakage.,bool
+active,state_or_label_only,Operational state; use carefully to avoid leakage.,bool
+ended,state_or_label_only,Operational state; use carefully to avoid leakage.,bool
+startReason,state_or_label_only,Operational state; use carefully to avoid leakage.,object
+stopReason,state_or_label_only,Operational state; use carefully to avoid leakage.,object
+stopAvailable,state_or_label_only,Operational state; use carefully to avoid leakage.,bool
+soc,feature,Candidate numerical/categorical feature.,float64
+stateOfCharge,feature,Candidate numerical/categorical feature.,float64
+voltage,feature,Candidate numerical/categorical feature.,float64
+current,feature,Candidate numerical/categorical feature.,float64
+powerW,feature,Candidate numerical/categorical feature.,float64
+powerKw,feature,Candidate numerical/categorical feature.,float64
+currentDemand,feature,Candidate numerical/categorical feature.,float64
+currentReservation,feature,Candidate numerical/categorical feature.,float64
+targetCurrent,feature,Candidate numerical/categorical feature.,float64
+targetVoltage,feature,Candidate numerical/categorical feature.,float64
+evMaximumCurrent,feature,Candidate numerical/categorical feature.,float64
+evMaximumPowerKw,feature,Candidate numerical/categorical feature.,float64
+evMaximumVoltage,feature,Candidate numerical/categorical feature.,float64
+maxPowerKw,feature,Candidate numerical/categorical feature.,float64
+maxPowerKwActual,feature,Candidate numerical/categorical feature.,float64
+maxPowerKwPresent,feature,Candidate numerical/categorical feature.,float64
+maxPowerWPresent,feature,Candidate numerical/categorical feature.,float64
+chargedEnergyKwh,feature,Candidate numerical/categorical feature.,float64
+energyWh,feature,Candidate numerical/categorical feature.,float64
+energyWhEstimate,feature,Candidate numerical/categorical feature.,float64
+energyWhMeter,feature,Candidate numerical/categorical feature.,float64
+calculatedWh,feature,Candidate numerical/categorical feature.,float64
+calculatedWhStart,feature,Candidate numerical/categorical feature.,float64
+efficiency,feature,Candidate numerical/categorical feature.,float64
+environmentalTemperature,feature,Candidate numerical/categorical feature.,float64
+pinTemp,feature,Candidate numerical/categorical feature.,float64
+pin2temp,feature,Candidate numerical/categorical feature.,float64
+boardTemp,feature,Candidate numerical/categorical feature.,float64
+rtTemp,feature,Candidate numerical/categorical feature.,float64
+AFEHeatsinkTemp,feature,Candidate numerical/categorical feature.,float64
+DCDCHeatsinkTemp,feature,Candidate numerical/categorical feature.,float64
+evCommunicationActive,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,bool
+evCommunicationStandard,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,object
+cableConnected,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,bool
+cablesLocked,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,bool
+commNotReady,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,bool
+commNotReadyReasons_count,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,int64
+evPresent,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,bool
+insulationTestStatus,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,object
+insulationTestFailed,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,bool
+hwFailure,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,bool
+hwFailureReasons_count,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,int64
+alarms_count,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,int64
+errors_count,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,int64
+unavailableReason,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,object
+chargingProtocol,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,object
+plugType,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,object
+plugTypeDetail,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,object
+voltageCategory,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,object
+vehicleMacAddress,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,object
+vehicleRunId,label_or_rule,Rule/weak-label/status column; avoid leakage if used for labels.,object
+current_error,feature,currentDemand - measured current.,float64
+current_error_abs,feature,Candidate numerical/categorical feature.,float64
+current_error_ratio,feature,Candidate numerical/categorical feature.,float64
+target_current_error,feature,Candidate numerical/categorical feature.,float64
+target_voltage_error,feature,Candidate numerical/categorical feature.,float64
+power_vi_error_w,feature,Difference between powerW and voltage*current.,float64
+temperature_to_ambient_delta,feature,Candidate numerical/categorical feature.,float64
+timestamp_gap_seconds,feature,Candidate numerical/categorical feature.,int64
+sequence_gap,feature,Candidate numerical/categorical feature.,int64
+missing_ratio,feature,Candidate numerical/categorical feature.,float64
+pmc_module_count,feature,Candidate numerical/categorical feature.,int64
+pmc_current_mean,feature,Candidate numerical/categorical feature.,float64
+pmc_current_std,feature,Candidate numerical/categorical feature.,float64
+pmc_current_gap,feature,Max-min current imbalance across power modules.,float64
+pmc_powerW_mean,feature,Candidate numerical/categorical feature.,float64
+pmc_powerW_std,feature,Candidate numerical/categorical feature.,float64
+pmc_powerW_gap,feature,Max-min power imbalance across power modules.,float64
+pmc_voltage_mean,feature,Candidate numerical/categorical feature.,float64
+pmc_voltage_std,feature,Candidate numerical/categorical feature.,float64
+pmc_voltage_gap,feature,Candidate numerical/categorical feature.,float64
+pmc_boardTemp_mean,feature,Candidate numerical/categorical feature.,float64
+pmc_boardTemp_std,feature,Candidate numerical/categorical feature.,float64
+pmc_rtTemp_mean,feature,Candidate numerical/categorical feature.,float64
+pmc_AFEHeatsinkTemp_mean,feature,Candidate numerical/categorical feature.,float64
+pmc_DCDCHeatsinkTemp_mean,feature,Candidate numerical/categorical feature.,float64
+pmc_temp_gap,feature,Temperature imbalance across power-module readings.,float64
+pmc_voltageTHD_mean,feature,Candidate numerical/categorical feature.,float64
+pmc_voltageTHD_max,feature,Candidate numerical/categorical feature.,float64
+scenario,label,Scenario/label column.,object
+anomaly_start_relative_s,label,Scenario/label column.,float64
+anomaly_end_relative_s,label,Scenario/label column.,float64
+label_current_anomaly,label,Weak current anomaly label for detection mode.,int64
+label_future_anomaly_5min,label,Early-warning label: current row is normal but anomaly appears within the given horizon in the same session.,int64
+label_future_anomaly_10min,label,Early-warning label: current row is normal but anomaly appears within the given horizon in the same session.,int64
+label_future_anomaly_15min,label,Early-warning label: current row is normal but anomaly appears within the given horizon in the same session.,int64
+label_source,label,Scenario/label column.,object

@@ -1,0 +1,5 @@
+label,rows,positive_rows,positive_rate
+label_current_anomaly,100000,9133,0.09133
+label_future_anomaly_5min,100000,4917,0.04917
+label_future_anomaly_10min,100000,8291,0.08291
+label_future_anomaly_15min,100000,10250,0.1025
